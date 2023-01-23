@@ -1,0 +1,45 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\20211148060008\Desktop\Projeto RAD\dll.Lib\libmysql\lib' +
+      'mysql.dll'
+    Left = 432
+    Top = 200
+  end
+  object DataSource1: TDataSource
+    DataSet = FDTable1
+    Left = 416
+    Top = 144
+  end
+  object FDConnection1: TFDConnection
+    Left = 264
+    Top = 112
+  end
+  object FDTable1: TFDTable
+    Connection = FDConnection1
+    Left = 240
+    Top = 184
+  end
+  object FDQuery1: TFDQuery
+    Connection = FDConnection1
+    Left = 328
+    Top = 296
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 408
+    Top = 296
+  end
+end

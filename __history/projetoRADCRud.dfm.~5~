@@ -1,0 +1,126 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object DBGrid1: TDBGrid
+    Left = 8
+    Top = 31
+    Width = 400
+    Height = 150
+    DataSource = DataSource1
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -12
+    Font.Name = 'Segoe UI'
+    Font.Style = []
+    ParentFont = False
+    TabOrder = 0
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = 1
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+  end
+  object StaticText1: TStaticText
+    Left = 24
+    Top = 8
+    Width = 201
+    Height = 17
+    Caption = 'CHAT TEXT'
+    TabOrder = 1
+  end
+  object DBGrid2: TDBGrid
+    Left = 455
+    Top = 31
+    Width = 161
+    Height = 298
+    DataSource = DataSource2
+    TabOrder = 2
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -12
+    TitleFont.Name = 'Segoe UI'
+    TitleFont.Style = []
+  end
+  object StaticText2: TStaticText
+    Left = 448
+    Top = 6
+    Width = 59
+    Height = 19
+    Caption = 'USUARIOS'
+    TabOrder = 3
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 
+      'C:\Users\20211148060008\Desktop\Projeto RAD\dll.Lib\libmysql\lib' +
+      'mysql.dll'
+    Left = 72
+    Top = 48
+  end
+  object DataSource1: TDataSource
+    DataSet = FDQuery1
+    Left = 272
+    Top = 88
+  end
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=teste')
+    Connected = True
+    Left = 8
+    Top = 168
+  end
+  object FDQuery1: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      ''
+      'select * from up_grup_post')
+    Left = 56
+    Top = 168
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'Forms'
+    Left = 112
+    Top = 176
+  end
+  object Tb_userTable: TFDQuery
+    DetailFields = 'cod_user;count_post;name_user'
+    SQL.Strings = (
+      'SELECT * FROM db_site.tb_user')
+    Left = 508
+    Top = 63
+  end
+  object Tb_postTable: TFDQuery
+    SQL.Strings = (
+      'SELECT * FROM db_site.tb_post')
+    Left = 186
+    Top = 50
+  end
+  object FDTable1: TFDTable
+    Connection = FDConnection1
+    Left = 184
+    Top = 168
+  end
+  object DataSource2: TDataSource
+    DataSet = FDQuery2
+    Left = 504
+    Top = 192
+  end
+  object FDQuery2: TFDQuery
+    Active = True
+    Connection = FDConnection1
+    SQL.Strings = (
+      'select name_user from tb_user')
+    Left = 496
+    Top = 264
+  end
+end
