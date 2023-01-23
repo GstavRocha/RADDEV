@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
-  <Transactions>
-    <Transaction>2023/01/23 13:31:59.812,=C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/01/23 13:32:33.732,C:\Users\20211148060008\Desktop\Projeto RAD\projetoRADCRud.dfm=C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
-    <Transaction>2023/01/23 13:32:33.732,C:\Users\20211148060008\Desktop\Projeto RAD\projetoRADCRud.pas=C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2023/01/23 15:49:28.446,C:\Users\20211148060008\Desktop\Projeto RAD\Project1.dproj=C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+	<Transactions>
+    <Transaction>2023/01/23 13:31:59.000.812,=C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/01/23 13:32:33.000.732,C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\20211148060008\Desktop\Projeto RAD\projetoRADCRud.dfm</Transaction>
+    <Transaction>2023/01/23 13:32:33.000.732,C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\20211148060008\Desktop\Projeto RAD\projetoRADCRud.pas</Transaction>
+    <Transaction>2023/01/23 15:49:28.000.446,C:\Users\20211148060008\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\20211148060008\Desktop\Projeto RAD\Project1.dproj</Transaction>
   </Transactions>
 </BorlandProject>

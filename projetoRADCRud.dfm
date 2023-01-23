@@ -11,6 +11,14 @@ object Form1: TForm1
   Font.Name = 'Segoe UI'
   Font.Style = []
   TextHeight = 21
+  object Label1: TLabel
+    Left = 48
+    Top = 336
+    Width = 62
+    Height = 21
+    Caption = 'cod_user'
+    FocusControl = DBEdit3
+  end
   object DBGrid1: TDBGrid
     Left = 10
     Top = 39
@@ -126,10 +134,19 @@ object Form1: TForm1
     DataSource = DataSource5
     TabOrder = 9
   end
+  object DBEdit3: TDBEdit
+    Left = 48
+    Top = 360
+    Width = 214
+    Height = 29
+    DataField = 'cod_user'
+    DataSource = DataSource5
+    TabOrder = 10
+  end
   object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
     VendorLib = 
-      'C:\Users\20211148060008\Desktop\Projeto RAD\dll.Lib\libmysql\lib' +
-      'mysql.dll'
+      'C:\Users\20211148060008\Desktop\RADDEV\dll.Lib\libmysql\libmysql' +
+      '.dll'
     Left = 72
     Top = 48
   end
@@ -208,7 +225,6 @@ object Form1: TForm1
     Top = 128
   end
   object FDQuery3: TFDQuery
-    Active = True
     Connection = FDConnection1
     SQL.Strings = (
       'select * from contador_post')
@@ -221,13 +237,16 @@ object Form1: TForm1
   end
   object FDQuery4: TFDQuery
     Connection = FDConnection1
-    Left = 32
-    Top = 248
+    Left = 136
+    Top = 200
   end
   object DataSource4: TDataSource
-    Top = 256
+    Left = 40
+    Top = 176
   end
   object FDQuery5: TFDQuery
+    Active = True
+    AfterPost = FDQuery5AfterPost
     Connection = FDConnection1
     SQL.Strings = (
       'select * from tb_post')
@@ -237,6 +256,7 @@ object Form1: TForm1
       FieldName = 'cod_post'
       Origin = 'cod_post'
       ProviderFlags = [pfInWhere, pfInKey]
+      ReadOnly = True
     end
     object FDQuery5txt_post: TStringField
       FieldName = 'txt_post'

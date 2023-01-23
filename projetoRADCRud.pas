@@ -48,6 +48,9 @@ type
     FDQuery5cod_origin_post: TIntegerField;
     DBEdit2: TDBEdit;
     DataSource5: TDataSource;
+    Label1: TLabel;
+    DBEdit3: TDBEdit;
+    procedure FDQuery5AfterPost(DataSet: TDataSet);
   private
     { Private declarations }
   public
@@ -60,5 +63,11 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TForm1.FDQuery5AfterPost(DataSet: TDataSet);
+begin
+  FDQuery1.Close;
+  FDQuery1.Open();
+end;
 
 end.
